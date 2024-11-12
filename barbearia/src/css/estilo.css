@@ -1,0 +1,303 @@
+/* estilos para a página */
+html, body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    box-sizing: border-box;
+  }
+
+  /* estilos para o cabeçalho */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .logotipo em {
+      color: #7c2323;
+      font-weight: 900;
+  }
+  
+  .logotipo h2 {
+      font-style: italic;
+      font-weight: 100;
+  }
+  
+  .logotipo h1 {
+      font-weight: 100;
+  }
+
+  /* estilos para o menu */
+  nav {
+    background-color: #7c2323;
+    justify-content: center;
+    display: flex;
+    padding: 10px;
+  }	
+
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+  /* estilos para o conteúdo */
+  main {
+    padding: 0px;
+    max-width: 100%;
+  }
+  
+  #container {
+      max-width: 800px;
+      margin: 0 auto;
+      border: 1px solid #000;
+      padding: 50px;
+      display: flex;
+      flex-wrap: wrap;
+  }
+  
+  .coluna-unica {
+    width: 100%;
+    order: 1;	
+    box-sizing: border-box;
+    padding: 10px;
+  }
+  
+  .coluna-esquerda {
+    width: 50%;
+    order: 1;	
+    box-sizing: border-box;
+    padding: 10px;
+  }
+
+  .coluna-direita {
+    width: 50%;
+    order: 2;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+
+  @media (max-width:600px) and (min-width:250px) {
+    .coluna-esquerda {
+      width: 100%;
+      order: 1;
+      padding: 0px;
+    }
+    
+    .coluna-direita {
+      width: 100%;
+      order: 2;
+      padding: 0px;
+    }
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 3em;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 2em;
+    margin: 0;
+  }
+  
+  h3 {
+    font-size: 26px;
+    margin: 0;
+  }
+  
+  strong {
+      color: #7c2323;
+  }
+  
+  p {
+      text-align: justify;
+  }
+
+  /* Estilo do botão de WhatsApp */
+.whatsapp-button {
+  display: inline-flex;
+  align-items: center;
+  background-color: #25D366; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+
+.whatsapp-button i {
+  margin-right: 8px;
+  font-size: 20px;
+}
+
+.whatsapp-button:hover {
+  background-color: #128C7E; 
+}
+
+  /* Estilo para o rodapé */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 60px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-column h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-column p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-rights {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+      
+  /* estilos para a tabela */
+    table {
+      width: 100%;
+      margin: 0 auto;
+      background-color: #f1f1f1;
+      padding: 10px;
+    }
+    
+    thead {
+        background: #000;
+        color: #fff;
+    }
+
+@media (max-width:600px) and (min-width:250px) {
+  #container {
+      padding: 10px;
+  }
+}
+  
+/* formulário */
+
+form {
+max-width: 500px;
+margin: 0 auto;
+padding: 20px;
+background-color: #f2f2f2;
+border-radius: 5px;
+}
+
+div {
+margin-bottom: 10px;
+}
+
+label {
+display: block;
+font-weight: bold;
+margin-bottom: 5px;
+}
+
+input, textarea {
+width: 100%;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+}
+
+input[type="submit"] {
+background-color: #4CAF50;
+color: white;
+border: none;
+cursor: pointer;
+}
+
+input[type="submit"]:hover {
+background-color: #45a049;
+}
+
+
+ul {
+list-style: none;
+padding: 0px;
+}
+
+li {
+margin-left: 1em;
+}
+
+/* galeria de fotos */
+#container {
+  padding: 20px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; 
+}
+
+.gallery img {
+  width: 45%; 
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05); 
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+}
+
+.modal-content {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 36px;
+  color: white;
+  cursor: pointer;
+}
